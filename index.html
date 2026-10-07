@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ashad Tahir — software engineering student in Karachi building web apps with PHP and MySQL and mobile apps with Dart and Flutter.">
+  <title>Ashad Tahir | Web & Mobile App Developer</title>
+  <link rel="icon" href="images/avatar.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Ashad Tahir, back to top">ashad<span>.</span></a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Let's talk</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+          <p class="hello load" style="--d:0s">
+            <img src="images/avatar.svg" alt="" width="40" height="40">
+            <span>Hi, I'm Ashad Tahir</span>
+          </p>
+
+          <h1 class="hero-title">
+            <span class="line"><span style="--d:.1s">Web apps.</span></span>
+            <span class="line"><span style="--d:.22s">Mobile apps.</span></span>
+            <span class="line"><span style="--d:.34s" class="line-outline">End to end.</span></span>
+          </h1>
+
+          <p class="hero-text load" style="--d:.55s">
+            I'm a software engineering student in Karachi. I build websites with PHP, MySQL and
+            JavaScript, and mobile apps with Dart and Flutter. Right now I'm a full stack intern at Progree.
+          </p>
+
+          <div class="hero-actions load" style="--d:.7s">
+            <a href="#projects" class="btn btn-primary">See my projects</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+
+          <ul class="hero-social load" style="--d:.85s">
+            <li><a href="https://github.com/ashadtahir25-a11y" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/ashad-tahir-965262335" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <!-- Hero visual: a web page and a phone app being built -->
+        <div class="hero-stage" id="hero-stage" aria-hidden="true">
+          <div class="stage-inner">
+
+            <div class="mock-browser stage-browser">
+              <div class="mb-top">
+                <i></i><i></i><i></i>
+                <span class="mb-url">caregroup / doctors</span>
+              </div>
+              <div class="mb-body">
+                <div class="mb-side">
+                  <b class="sk" style="--d:1.0s; width:70%"></b>
+                  <b class="sk" style="--d:1.05s; width:55%"></b>
+                  <b class="sk" style="--d:1.1s; width:62%"></b>
+                  <b class="sk" style="--d:1.15s; width:48%"></b>
+                </div>
+                <div class="mb-main">
+                  <b class="sk sk-title" style="--d:1.0s"></b>
+                  <div class="mb-row">
+                    <span class="dot dot-violet pop" style="--d:1.3s"></span>
+                    <div class="mb-lines"><b class="sk" style="--d:1.35s; width:80%"></b><b class="sk sk-soft" style="--d:1.4s; width:55%"></b></div>
+                    <span class="pill pop" style="--d:1.9s">Book</span>
+                  </div>
+                  <div class="mb-row">
+                    <span class="dot dot-coral pop" style="--d:1.45s"></span>
+                    <div class="mb-lines"><b class="sk" style="--d:1.5s; width:70%"></b><b class="sk sk-soft" style="--d:1.55s; width:45%"></b></div>
+                    <span class="pill pop" style="--d:2.0s">Book</span>
+                  </div>
+                  <div class="mb-row">
+                    <span class="dot dot-lemon pop" style="--d:1.6s"></span>
+                    <div class="mb-lines"><b class="sk" style="--d:1.65s; width:75%"></b><b class="sk sk-soft" style="--d:1.7s; width:50%"></b></div>
+                    <span class="pill pop" style="--d:2.1s">Book</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="phone-wrap">
+              <div class="mock-phone stage-phone">
+                <div class="mp-notch"></div>
+                <div class="mp-head">
+                  <b class="sk" style="--d:1.2s; width:45%"></b>
+                  <span class="mp-cart">
+                    <svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M6 6h15l-1.5 9h-12L5 3H2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="20" r="1.6" fill="currentColor"/><circle cx="18" cy="20" r="1.6" fill="currentColor"/></svg>
+                    <em class="badge">1</em>
+                  </span>
+                </div>
+                <div class="mp-banner pop" style="--d:1.35s"><b></b><b></b></div>
+                <div class="mp-grid">
+                  <div class="mp-card pop" style="--d:1.55s"><span class="img img-violet"></span><b></b><b class="short"></b></div>
+                  <div class="mp-card pop" style="--d:1.65s"><span class="img img-coral"></span><b></b><b class="short"></b></div>
+                  <div class="mp-card pop" style="--d:1.75s"><span class="img img-lemon"></span><b></b><b class="short"></b></div>
+                  <div class="mp-card pop" style="--d:1.85s"><span class="img img-mint"></span><b></b><b class="short"></b></div>
+                </div>
+                <div class="mp-cta pop" style="--d:2.1s">Add to cart</div>
+              </div>
+            </div>
+
+            <div class="chip chip-a pop" style="--d:2.3s"><span class="chip-dot"></span>flutter run</div>
+            <div class="chip chip-b pop" style="--d:2.45s"><span class="chip-dot"></span>php -S localhost</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SKILLS MARQUEE ================= -->
+    <div class="marquee-wrap">
+    <div class="marquee" aria-label="Technologies I use">
+      <ul class="marquee-track">
+        <li>Flutter</li><li>Dart</li><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>HTML5</li>
+        <li>CSS3</li><li>Bootstrap</li><li>jQuery</li><li>Firebase</li><li>Riverpod</li><li>C++</li>
+        <li>Java</li><li>Figma</li><li>Adobe XD</li><li>Git</li>
+      </ul>
+      <ul class="marquee-track" aria-hidden="true">
+        <li>Flutter</li><li>Dart</li><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>HTML5</li>
+        <li>CSS3</li><li>Bootstrap</li><li>jQuery</li><li>Firebase</li><li>Riverpod</li><li>C++</li>
+        <li>Java</li><li>Figma</li><li>Adobe XD</li><li>Git</li>
+      </ul>
+    </div>
+    </div>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <h2 class="section-title reveal">About me</h2>
+
+        <div class="about-text reveal">
+          <p class="lead">
+            I like taking an idea all the way from a sketch in Figma to something people can
+            actually tap, click and use.
+          </p>
+          <p>
+            I study software engineering on two tracks at once: a Higher Diploma at Aptech Pakistan
+            and a Bachelor of Computer Science at Sir Syed University (SSUET). Along the way I've
+            built a medical services portal in PHP and MySQL and a full e-commerce app in Flutter
+            with its own admin dashboard. I also have a foundation in C++ and Java.
+          </p>
+        </div>
+
+        <dl class="facts reveal">
+          <div><dt>Based in</dt><dd>Karachi, Pakistan</dd></div>
+          <div><dt>Interning at</dt><dd>Progree, full stack</dd></div>
+          <div><dt>Studying</dt><dd>BCS at SSUET</dd></div>
+          <div><dt>Diploma</dt><dd>Software Engineering, Aptech</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section section-tint" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">What I work with</h2>
+
+        <div class="skill-groups">
+          <article class="skill-group reveal">
+            <h3>Web frontend</h3>
+            <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Bootstrap</li><li>jQuery</li></ul>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Backend and data</h3>
+            <ul class="tags"><li>PHP</li><li>MySQL</li><li>Firebase</li></ul>
+          </article>
+          <article class="skill-group skill-group-wide reveal">
+            <h3>Mobile app development</h3>
+            <ul class="tags"><li>Dart</li><li>Flutter</li><li>Riverpod</li><li>Firebase Auth</li><li>Cloud Firestore</li></ul>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Programming</h3>
+            <ul class="tags"><li>C++</li><li>Java</li></ul>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Design and tools</h3>
+            <ul class="tags"><li>Figma</li><li>Adobe XD</li><li>Git</li><li>GitHub</li><li>Microsoft Office</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">Selected work</h2>
+
+        <article class="project reveal">
+          <div class="project-visual visual-violet tilt">
+            <div class="mock-phone project-phone" aria-hidden="true">
+              <div class="mp-notch"></div>
+              <div class="mp-head"><b class="sk is-drawn" style="width:45%"></b><span class="mp-cart"><svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M6 6h15l-1.5 9h-12L5 3H2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="20" r="1.6" fill="currentColor"/><circle cx="18" cy="20" r="1.6" fill="currentColor"/></svg></span></div>
+              <div class="mp-banner"><b></b><b></b></div>
+              <div class="mp-grid">
+                <div class="mp-card"><span class="img img-coral"></span><b></b><b class="short"></b></div>
+                <div class="mp-card"><span class="img img-lemon"></span><b></b><b class="short"></b></div>
+                <div class="mp-card"><span class="img img-mint"></span><b></b><b class="short"></b></div>
+                <div class="mp-card"><span class="img img-violet"></span><b></b><b class="short"></b></div>
+              </div>
+              <div class="mp-cta">Add to cart</div>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-kind">Mobile app</p>
+            <h3>ShopVerse</h3>
+            <p>
+              An e-commerce app with a full customer shopping flow (browsing, cart, wishlist,
+              checkout, orders, returns, reviews and support chat) plus a separate admin dashboard
+              for running the store. Data is synced live through Firebase.
+            </p>
+            <ul class="tags"><li>Dart</li><li>Flutter</li><li>Riverpod</li><li>Firebase</li><li>Cloudinary</li></ul>
+            <a class="text-link" href="https://github.com/ashadtahir25-a11y/Shopverse" target="_blank" rel="noopener">View code on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project project-flip reveal">
+          <div class="project-visual visual-coral tilt">
+            <div class="mock-browser project-browser" aria-hidden="true">
+              <div class="mb-top"><i></i><i></i><i></i><span class="mb-url">caregroup / doctors</span></div>
+              <div class="mb-body">
+                <div class="mb-side"><b class="sk is-drawn" style="width:70%"></b><b class="sk is-drawn" style="width:55%"></b><b class="sk is-drawn" style="width:62%"></b><b class="sk is-drawn" style="width:48%"></b></div>
+                <div class="mb-main">
+                  <b class="sk sk-title is-drawn"></b>
+                  <div class="mb-row"><span class="dot dot-violet"></span><div class="mb-lines"><b class="sk is-drawn" style="width:80%"></b><b class="sk sk-soft is-drawn" style="width:55%"></b></div><span class="pill">Book</span></div>
+                  <div class="mb-row"><span class="dot dot-coral"></span><div class="mb-lines"><b class="sk is-drawn" style="width:70%"></b><b class="sk sk-soft is-drawn" style="width:45%"></b></div><span class="pill">Book</span></div>
+                  <div class="mb-row"><span class="dot dot-lemon"></span><div class="mb-lines"><b class="sk is-drawn" style="width:75%"></b><b class="sk sk-soft is-drawn" style="width:50%"></b></div><span class="pill">Book</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-kind">Web app</p>
+            <h3>CARE Group Medical Services</h3>
+            <p>
+              A medical services portal built for my Aptech eProject. Patients can find doctors,
+              book and reschedule appointments and download slips, while doctors and admins get
+              their own dashboards. Passwords are hashed and logins lock after repeated failed attempts.
+            </p>
+            <ul class="tags"><li>PHP</li><li>MySQL</li><li>PDO</li><li>Bootstrap</li><li>jQuery</li></ul>
+            <a class="text-link" href="https://github.com/ashadtahir25-a11y/Caregroup" target="_blank" rel="noopener">View code on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-upcoming reveal">
+          <div>
+            <p class="project-kind">In progress</p>
+            <h3>Task Dashboard</h3>
+            <p>A full stack task manager with create, read, update and delete, built during my Progree internship.</p>
+          </div>
+          <span class="status-pill"><span class="status-dot"></span>Building now</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= JOURNEY ================= -->
+    <section class="section section-tint" id="journey">
+      <div class="container">
+        <h2 class="section-title reveal">Education and experience</h2>
+
+        <ol class="timeline">
+          <li class="reveal">
+            <span class="t-date">2026 to present</span>
+            <div>
+              <h3>Full Stack Development Intern</h3>
+              <p class="t-place">Progree</p>
+              <p>Building a responsive portfolio, a full stack task dashboard and a secure e-commerce engine.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="t-date">Oct 2025 to present</span>
+            <div>
+              <h3>Bachelor of Computer Science</h3>
+              <p class="t-place">Sir Syed University of Engineering &amp; Technology (SSUET)</p>
+              <p>Computer and information sciences.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="t-date">Aug 2024 to 2026</span>
+            <div>
+              <h3>Higher Diploma in Software Engineering</h3>
+              <p class="t-place">Aptech Pakistan</p>
+              <p>Web development with HTML, CSS, JavaScript, Bootstrap, jQuery, PHP and MySQL, plus UI design and semester eProjects.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="t-date">2023 to 2025</span>
+            <div>
+              <h3>Intermediate in Computer Science</h3>
+              <p class="t-place">Government College for Men</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="t-date">Completed 2023</span>
+            <div>
+              <h3>Matriculation in Computer Science</h3>
+              <p class="t-place">Federal Secondary School</p>
+              <p>Graduated with grade A.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-intro">
+            <h2>Have a project or an internship in mind?</h2>
+            <p>Send me a message here, or reach me on LinkedIn or GitHub. I usually reply within a day.</p>
+            <ul class="contact-links">
+              <!-- Email dena ho to ye line uncomment kar ke apna email likho -->
+              <!-- <li><a href="mailto:youremail@example.com">youremail@example.com</a></li> -->
+              <li><a href="https://www.linkedin.com/in/ashad-tahir-965262335" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com/ashadtahir25-a11y" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Your email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-light">Send message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Ashad Tahir. Designed and built in Karachi.</p>
+      <a href="#home" class="back-to-top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
