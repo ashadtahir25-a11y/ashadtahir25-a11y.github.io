@@ -1031,6 +1031,21 @@ h3 {
 
 .visual-violet { background: var(--lemon); }
 .visual-coral { background: var(--coral); }
+.visual-mint { background: var(--mint); }
+
+.project-shot {
+  width: 88%;
+  height: auto;
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  box-shadow: 0.7em 0.7em 0 var(--ink);
+  transform: rotate(-2deg);
+  transition: transform 0.7s var(--ease);
+}
+
+.project-visual:hover .project-shot {
+  transform: rotate(0deg) scale(1.03);
+}
 
 .project-phone {
   transform: rotate(-6deg) translateY(10%);
